@@ -109,13 +109,13 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                                         height={100}
                                         className="opacity-70"
                                     />
-                                    <Image
+                                    {/* <Image
                                         src={"/images/partners/solana.png"}
                                         alt="Solana Logo"
                                         width={130}
                                         height={100}
                                         className="opacity-70"
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                         </div>
