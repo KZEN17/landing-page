@@ -2,7 +2,6 @@ import { Feature } from "@/components/Features";
 import { HeroSection } from "@/components/HeroSection";
 import { Partners } from "@/components/Partners";
 import { Icons } from "@/lib/icons";
-import Image from "next/image";
 
 export default function Home() {
   return (

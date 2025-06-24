@@ -19,12 +19,7 @@ export const Partners = () => {
         { name: "Azur", logo: "/images/partners/azur.png" },
     ];
 
-    const logos2 = [
-        { name: "metalcore", logo: "/images/partners/metalcore.png" },
-        { name: "offthegrid", logo: "/images/partners/offthegrid.png" },
-        { name: "Cross The Ages", logo: "/images/partners/crosstheages.png" },
-        { name: "Azur", logo: "/images/partners/azur.png" },
-    ];
+
 
     return (
         <div className="flex flex-col items-center justify-center space-y-8 px-4 md:px-8">

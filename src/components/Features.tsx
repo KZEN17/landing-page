@@ -6,7 +6,6 @@ import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "motion/react";
 import Image from "next/image";
 import { Badge } from "./Badge";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Token from "./Token";
 
 function Feature() {
@@ -96,7 +95,6 @@ const Feat2 = () => {
     const ref = useRef(null); // Reference for the section
     const inView = useInView(ref, { once: true }); // Trigger when 20% of the section is visible
     const controls = useAnimation();
-    const isDesktop = useMediaQuery("(min-width: 768px)");
 
     useEffect(() => {
         if (inView) {
@@ -149,7 +147,7 @@ const Feat2 = () => {
                                     Deposit Your Tokens
                                 </h2>
                                 <p className="max-w-xl text-left text-lg leading-relaxed tracking-tight text-muted-foreground lg:max-w-md">
-                                    To participate in battles, deposit your project's tokens into the VPVP liquidity pools. Meet the
+                                    To participate in battles, deposit your project`&apos;`s tokens into the VPVP liquidity pools. Meet the
                                     minimum requirement or add more for increased rewards and a stronger market presence. Your tokens fuel
                                     engagement, liquidity, and competitive battles.
                                 </p>
