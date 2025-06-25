@@ -33,7 +33,7 @@ export default function FAQSection() {
     ];
 
     return (
-        <section className="py-24 bg-gradient-to-br relative overflow-hidden">
+        <section id="faq" className="py-24 bg-gradient-to-br relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-br from-lime-400/10 to-emerald-500/10 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-full blur-3xl"></div>

@@ -22,36 +22,38 @@ export const Partners = () => {
 
 
     return (
-        <div className="flex flex-col bg-newGrey items-center justify-center space-y-8 px-4 mt-10 md:px-8">
-            {/* Left Scrolling Logos */}
-            <h2 className="my-4  bg-clip-text text-4xl font-semibold text-newGray">
-                PREVIOUS PARTNERS
-            </h2>
-            <div
-                className="grid grid-cols-4 items-center justify-items-center gap-8 md:grid-cols-5 lg:grid-cols-7"
-                style={{
-                    display: "grid",
+        <section id="partners">
+            <div className="flex flex-col bg-newGrey items-center justify-center space-y-12 px-4 my-20 md:px-8">
+                {/* Left Scrolling Logos */}
+                <h2 className="my-32  bg-clip-text text-4xl font-semibold text-newGray">
+                    PREVIOUS PARTNERS
+                </h2>
+                <div
+                    className="grid grid-cols-4 items-center justify-items-center gap-8 md:grid-cols-5 lg:grid-cols-7"
+                    style={{
+                        display: "grid",
 
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
-                {logos.map((logo) => (
-                    <Image
-                        src={logo.logo}
-                        alt={logo.name}
-                        key={`${logo.name}-2`}
-                        sizes="100vw"
-                        className="opacity-70"
-                        style={{
-                            width: "70%",
-                            height: "auto",
-                        }}
-                        width={200}
-                        height={200}
-                    />
-                ))}
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    {logos.map((logo) => (
+                        <Image
+                            src={logo.logo}
+                            alt={logo.name}
+                            key={`${logo.name}-2`}
+                            sizes="100vw"
+                            className="opacity-70"
+                            style={{
+                                width: "70%",
+                                height: "auto",
+                            }}
+                            width={200}
+                            height={200}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };

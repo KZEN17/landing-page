@@ -4,7 +4,7 @@ import HeroSection from "../components/HeroSection";
 import FeaturesSection from "../components/FeaturesSection";
 import FAQSection from "../components/FAQSection";
 import { Partners } from "@/components/Partners";
-import SponsorsSection from "@/components/SponsorsSection";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       <FeaturesSection />
       <FAQSection />
       <Partners />
+      <Footer />
     </div>
   );
 }
