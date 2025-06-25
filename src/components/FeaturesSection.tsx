@@ -35,7 +35,7 @@ export default function FeaturesSection() {
                         </div>
                         <h3 className="text-xl font-bold text-white mb-4">Genesis Launch</h3>
                         <p className="text-btGrey text-sm">
-                            Win. Earn. Claim Genesis Tokens. Don't let whales take your spot — grind your way into early allocation.
+                            Win. Earn. Claim Genesis Tokens. Don`&apos;`t let whales take your spot — grind your way into early allocation.
                         </p>
                     </div>
 
