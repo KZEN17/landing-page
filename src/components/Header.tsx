@@ -19,7 +19,7 @@ export default function Header() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    {/* <nav className="hidden md:flex items-center gap-8">
                         <a href="#features" className="text-btGrey hover:text-btGreen transition-colors duration-200">
                             Features
                         </a>
@@ -29,7 +29,7 @@ export default function Header() {
                         <a href="#faq" className="text-btGrey hover:text-btGreen transition-colors duration-200">
                             FAQ
                         </a>
-                    </nav>
+                    </nav> */}
 
                     {/* Social Icons & CTA */}
                     <div className="hidden md:flex items-center gap-4">

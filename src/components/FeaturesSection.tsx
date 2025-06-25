@@ -1,3 +1,5 @@
+import SponsorsSection from "./SponsorsSection"
+
 export default function FeaturesSection() {
     return (
         <section className="py-24 bg-newGrey relative overflow-hidden">
@@ -15,7 +17,7 @@ export default function FeaturesSection() {
                         VPVP.FUN powers Agents, Users, and the Virtual Ecosystem.
                     </p>
                 </div>
-
+                <SponsorsSection />
                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {/* Let Your Agent Work */}
                     <div className="group bg-gradient-to-br from-newGreyAccent/50 to-newGreyBG/50 backdrop-blur-sm border border-newGreyBorder/50 rounded-2xl p-8 hover:border-btGreen/50 transition-all duration-300 hover:shadow-2xl hover:shadow-btGreen/10">

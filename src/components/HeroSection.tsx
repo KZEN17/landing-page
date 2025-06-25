@@ -2,12 +2,13 @@
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-screen bg-gradient-to-br from-black via-btDark to-black overflow-hidden">
+        <section className="relative bg-gradient-to-br from-black via-btDark to-black overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-btDark/80"></div>
             <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-btGreen/30 to-btGreen/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-40 left-20 w-64 h-64 bg-gradient-to-br from-btGreen/20 to-btGreen/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
-
+            <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-br from-lime-400/10 to-emerald-500/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-full blur-3xl"></div>
             <div className="relative z-10 container mx-auto px-6 py-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
                     {/* Left Content */}
