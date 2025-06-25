@@ -1,131 +1,74 @@
-"use client";
-
-import * as React from "react";
-import { cn } from "@/utils";
 import Image from "next/image";
-import { motion } from "motion/react";
 
-interface HeroSectionProps extends React.HTMLAttributes<HTMLDivElement> {
-    title?: string;
-    subtitle?: {
-        regular: string;
-        gradient: string;
-    };
-    refferal?: string;
-    description?: string;
-    ctaText?: string;
-    ctaHref?: string;
-    bottomImage?: {
-        light: string;
-        dark: string;
-    };
-    gridOptions?: {
-        angle?: number;
-        cellSize?: number;
-        opacity?: number;
-        lightLineColor?: string;
-        darkLineColor?: string;
-    };
-}
+export default function HeroSection() {
+    return (
+        <section className="relative min-h-screen bg-gradient-to-br from-black via-btDark to-black overflow-hidden">
+            {/* Background decorative elements */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-btDark/80"></div>
+            <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-btGreen/30 to-btGreen/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-40 left-20 w-64 h-64 bg-gradient-to-br from-btGreen/20 to-btGreen/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
 
-const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
-    (
-        {
-            className,
-            subtitle,
-            description,
-            ctaText,
-            ctaHref,
-            ...props
-        },
-        ref,
-    ) => {
-        return (
-            <motion.div
-                initial={{
-                    opacity: 0,
-                    y: 50,
-                }}
-                animate={{
-                    opacity: 1,
-                    y: 0,
-                }}
-                transition={{
-                    delay: 0.6,
-                    duration: 1,
-                }}
-            >
-                <div className={cn("relative", className)} ref={ref} {...props}>
-                    <div className="absolute top-0 z-[0] h-screen w-full" />
-                    <section className="z-1 relative mx-auto max-w-full">
-                        <div className="z-10 gap-12">
-                            <div
-                                className="relative flex w-full p-4 md:p-16"
-                                style={{
-                                    backgroundImage: 'url("/images/new-banner.png")',
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "center",
-                                }}
-                            >
-                                <div className="absolute inset-0 z-10 bg-black opacity-40"></div>
+            <div className="relative z-10 container mx-auto px-6 py-20">
+                <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+                    {/* Left Content */}
+                    <div className="space-y-8">
+                        <div className="inline-flex items-center gap-2 bg-btGreen/10 border border-btGreen/20 rounded-full px-4 py-2 text-btGreen text-sm font-medium">
+                            <span className="w-2 h-2 bg-btGreen rounded-full animate-pulse"></span>
+                            PvP Staking • Virtual Agents • Genesis Access
+                        </div>
 
-                                <div className="leading-0 z-10 mx-auto max-w-3xl space-y-5 text-center lg:leading-5">
-                                    {subtitle && (
-                                        <h2 className="mx-auto bg-[linear-gradient(180deg,_#000_0%,_rgba(0,_0,_0,_0.75)_100%)] bg-clip-text text-4xl tracking-wider text-transparent dark:bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)] md:text-6xl">
-                                            {subtitle.regular}
-                                            {subtitle.gradient}
-                                        </h2>
-                                    )}
+                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
+                            Deploy Virtual Agents
+                            <br />
+                            <span className="bg-gradient-to-r from-btGreen to-btGreen/80 bg-clip-text text-transparent">
+                                Farm Genesis Points
+                            </span>
+                        </h1>
 
-                                    {description && (
-                                        <p className="mx-auto max-w-2xl text-lg text-gray-200">{description}</p>
-                                    )}
+                        <p className="text-xl text-btGrey leading-relaxed max-w-lg">
+                            The ultimate PvP staking and battle platform for the Virtual Ecosystem.
+                            Stake $PVP, deploy AI agents, and earn Genesis allocations 24/7.
+                        </p>
 
-                                    <div className="flex items-center justify-center gap-4 md:gap-8">
-                                        {ctaText && ctaHref && (
-                                            <a href={ctaHref} target="_blank">
-                                                <button className="bg-[#d1fd0a] text-black px-8 py-3 rounded font-bold text-lg hover:bg-btGreen/80 transition-colors">
-                                                    {ctaText}
-                                                </button>
-                                            </a>
-                                        )}
+                        <div className="space-y-4">
+                            <button className="group relative bg-btGreen hover:from-btGreen/90 hover:to-btGreen text-btDark font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-btGreen/25">
+                                <span className="relative z-10 text-black">Start Farming Now</span>
+                                <div className="absolute inset-0 bg-gradient-to-r from-btGreen/80 to-btGreen rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                            </button>
+
+                            <div className="flex items-center gap-3 text-btGrey">
+                                <span className="text-sm">Active Farmers</span>
+                                <div className="flex items-baseline gap-1">
+                                    <span className="text-3xl font-bold text-white">1,337</span>
+                                    <span className="text-btGreen font-semibold">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right Content - 3D Visual */}
+                    <div className="relative flex items-center justify-center lg:justify-end">
+                        <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                            {/* Main 3D Ring */}
+                            <div className="absolute inset-0 rounded-full animate-spin-slow shadow-2xl shadow-btGreen">
+                                <div className="absolute inset-4 bg-gradient-to-tr from-black to-btDark rounded-full">
+                                    <div className="absolute inset-8 bg-gradient-to-br from-btGreen via-btGreen to-btGreen rounded-full opacity-80 animate-pulse">
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="leading-0 mx-auto mt-4 max-w-3xl space-y-5 text-center lg:leading-5">
-                                <div className="flex w-full flex-wrap items-center justify-center gap-8 pt-4">
-                                    <Image
-                                        src={"/images/partners/virtuals.png"}
-                                        alt="Virtuals Logo"
-                                        width={130}
-                                        height={100}
-                                        className="opacity-70"
-                                    />
-                                    <Image
-                                        src={"/images/partners/base.png"}
-                                        alt="Base Logo"
-                                        width={130}
-                                        height={100}
-                                        className="opacity-70"
-                                    />
-                                    {/* <Image
-                                        src={"/images/partners/solana.png"}
-                                        alt="Solana Logo"
-                                        width={130}
-                                        height={100}
-                                        className="opacity-70"
-                                    /> */}
-                                </div>
-                            </div>
+                            {/* Floating elements */}
+                            <div className="absolute -top-8 -right-8 w-16 h-16 bg-btGreen rounded-full animate-float shadow-lg shadow-btGreen/50"></div>
+                            <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-btGreen rounded-full animate-float-delayed shadow-lg shadow-btGreen/50"></div>
+                            <div className="absolute top-1/2 -right-12 w-8 h-8 bg-btGreen rounded-full animate-bounce"></div>
+
+                            {/* Additional floating particles */}
+                            <div className="absolute top-1/4 -left-8 w-6 h-6 bg-btGreen rounded-full animate-float"></div>
+                            <div className="absolute bottom-1/4 right-4 w-4 h-4 bg-btGreen rounded-full animate-bounce delay-500"></div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </motion.div>
-        );
-    },
-);
-
-HeroSection.displayName = "HeroSection";
-
-export { HeroSection };
+            </div>
+        </section>
+    );
+}

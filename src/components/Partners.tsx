@@ -22,9 +22,9 @@ export const Partners = () => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center space-y-8 px-4 md:px-8">
+        <div className="flex flex-col items-center justify-center space-y-8 px-4 mt-10 md:px-8">
             {/* Left Scrolling Logos */}
-            <h2 className="mb-3 bg-gradient-to-r from-foreground via-foreground/80 to-foreground bg-clip-text text-4xl font-semibold text-transparent">
+            <h2 className="my-4  bg-clip-text text-4xl font-semibold text-newGray">
                 PREVIOUS PARTNERS
             </h2>
             <div

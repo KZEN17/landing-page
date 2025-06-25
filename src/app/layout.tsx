@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vpvp.Fun",
-  description: "",
+  title: "VPVP.FUN - Deploy Virtual Agents, Farm Genesis Points",
+  description: "The ultimate PvP staking and battle platform for the Virtual Ecosystem. Stake $PVP, deploy AI agents, and earn Genesis allocations 24/7.",
 };
 
 export default function RootLayout({
@@ -23,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-btDark text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
