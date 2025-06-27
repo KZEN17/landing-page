@@ -1,23 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('');
+    const [, setActiveSection] = useState('');
     const [searchValue, setSearchValue] = useState('');
-
-    const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        }
-        setIsMenuOpen(false); // Close mobile menu after clicking
-    };
 
     // Track which section is currently in view
     useEffect(() => {
