@@ -42,7 +42,7 @@ export default function FAQSection() {
                     </p>
                 </div>
 
-                <div className="mx-auto space-y-4">
+                <div className="mx-auto px-6 space-y-2">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}

@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer className="relative overflow-hidden">
             {/* Background decorative elements */}
-            <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-br from-btGreen opacity-5 rounded-full blur-3xl"></div>
+            <div className="absolute top-0 left-1/4 w-64 h-64 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-gradient-to-br from-btPurple opacity-5 rounded-full blur-3xl"></div>
 
             <div className="relative z-10 container mx-auto px-6 py-12">

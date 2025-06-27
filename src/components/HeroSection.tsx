@@ -1,8 +1,9 @@
+import Image from "next/image";
 export default function HeroSection() {
     return (
-        <section className="flex py-12 items-center justify-center px-6 lg:px-12">
+        <section className="flex py-12 items-center justify-center px-6 lg:px-6">
             <div className="container mx-auto">
-                <div className="grid lg:grid-cols-2 gap-1 items-center">
+                <div className="grid grid-cols-[40%_60%] gap-0 items-center">
                     {/* Left Content */}
                     <div className="space-y-0">
                         {/* Badge */}
@@ -18,10 +19,11 @@ export default function HeroSection() {
                         </h1>
 
                         {/* Description */}
-                        <p className="text-lg lg:text-xl text-white/80 leading-relaxed max-w-lg">
-                            The Ultimate PvP Staking And Battle Platform For The Virtual
-                            Ecosystem. Stake $PVP, Deploy AI Agents, And Earn Genesis
-                            Allocations 24/7.
+                        <p className="text-lg lg:text-xl text-btGrey leading-relaxed max-w-lg">
+                            Grind Points. Claim Genesis. Rule PvP.
+                            Create Your Agent, Stake Once, Farm Forever.
+                            $PVP lets you deploy a virtual battle agent that grinds points 24/7 — earning you Genesis allocations, leaderboard rewards, and staking yield, all on autopilot.
+
                         </p>
 
                         {/* Stats Row */}
@@ -41,15 +43,12 @@ export default function HeroSection() {
                     </div>
 
                     {/* Right Content - Hero Image */}
-                    <div className="relative flex items-center justify-center lg:justify-end h-full">
-                        <div
-                            className="w-screen h-full bg-cover bg-center bg-no-repeat"
-                            style={{
-                                backgroundImage: "url('/images/hero-section.png')",
-                                backgroundSize: 'contain',
-                                backgroundRepeat: 'no-repeat',
-                                minHeight: '400px'
-                            }}
+                    <div className="relative flex items-center justify-center lg:justify-start h-full">
+                        <Image
+                            src={'/images/hero-section.png'}
+                            fill={true}
+                            alt="Hero Image"
+
                         />
                     </div>
                 </div>
