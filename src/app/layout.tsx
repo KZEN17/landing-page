@@ -43,7 +43,7 @@ export default function RootLayout({
 
           {/* Sticky Female Fighter - Bottom Right - Hidden on mobile */}
           <div
-            className="hidden lg:block fixed bottom-0 -left-48 w-150 h-screen z-10 pointer-events-none"
+            className="hidden lg:block fixed bottom-0 -left-48 w-130 h-screen z-10 pointer-events-none"
             style={{
               backgroundImage: "url('/images/sticky-background-element.png')",
               backgroundRepeat: 'no-repeat',
