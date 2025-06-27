@@ -23,11 +23,14 @@ export const Partners = () => {
 
     return (
         <section id="partners">
-            <div className="flex flex-col bg-newGrey items-center justify-center space-y-12 px-4 my-20 md:px-8">
+            <div className="flex flex-col items-center justify-center space-y-12 py-4 px-4 my-20 md:px-8">
                 {/* Left Scrolling Logos */}
-                <h2 className="my-32  bg-clip-text text-4xl font-semibold text-newGray">
-                    PREVIOUS PARTNERS
-                </h2>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+                        PREVIOUS
+                        <span className="text-btGreen"> PARTNERS</span>
+                    </h2>
+                </div>
                 <div
                     className="grid grid-cols-4 items-center justify-items-center gap-8 md:grid-cols-5 lg:grid-cols-7"
                     style={{

@@ -1,5 +1,4 @@
 import SponsorsSection from "./SponsorsSection"
-// import Image from "next/image";
 
 export default function FeaturesSection() {
     const features = [
@@ -8,47 +7,61 @@ export default function FeaturesSection() {
             title: "Let Your Agent Work For You",
             description: "Earn more by staking $PVP — every action amplifies your grind.",
             gradient: "from-btGreen to-btGreen",
-            imagePath: "/images/agent-work.png" // placeholder for your image
+            svgContent: (
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-8 transition-all duration-300">
+                    <path d="M14.1919 0.411221C13.5696 0.407705 13.1641 0.824658 12.9189 1.18404C12.6737 1.54352 12.5142 1.93832 12.384 2.32064C12.282 2.62035 12.2019 2.91391 12.1414 3.16193H13.7788C13.8102 3.05277 13.8438 2.94177 13.8816 2.83059C13.9858 2.52473 14.1195 2.23152 14.2258 2.07561C14.2696 2.01144 14.2831 2.00125 14.2884 1.99387L19.7091 2.02349C19.7147 2.03087 19.7311 2.04326 19.7763 2.10874C19.8825 2.26299 20.0154 2.55171 20.1194 2.85291C20.1552 2.95662 20.1869 3.05998 20.217 3.16193H21.8567C21.796 2.91821 21.7163 2.63063 21.615 2.3369C21.4845 1.95897 21.3246 1.56786 21.0792 1.21155C20.8338 0.855156 20.4326 0.445146 19.8168 0.441894L14.1918 0.411133L14.1919 0.411221ZM2.9375 4.74396C2.49805 4.74396 1.96631 4.98804 1.56315 5.3911C1.16009 5.79426 0.916016 6.326 0.916016 6.76545V8.63532L6.17328 16.5213H7.29459V15.1151H11.6891V16.5213H21.834V15.1151H26.2285V16.5213H27.8267L33.084 8.63532V6.76545C33.084 6.326 32.8399 5.79426 32.4368 5.3911C32.0337 4.98804 31.502 4.74396 31.0625 4.74396H2.9375ZM0.916016 11.4874V25.0467C0.916016 25.4862 1.16009 26.0179 1.56315 26.421C1.96631 26.8241 2.49805 27.0682 2.9375 27.0682H31.0625C31.502 27.0682 32.0337 26.8241 32.4368 26.421C32.8399 26.0179 33.084 25.4862 33.084 25.0467V11.4874L28.6733 18.1033H26.2285V21.7234H21.834V18.1033H11.6891V21.7234H7.29459V18.1033H5.32672L0.916016 11.4874ZM8.87662 16.6971V20.1413H10.1071V16.6971H8.87662ZM23.416 16.6971V20.1413H24.6465V16.6971H23.416Z" fill="white" className="group-hover:fill-[#D1FD0A] transition-colors duration-300" />
+                </svg>
+            )
         },
         {
             icon: "🎯",
             title: "Genesis Launch",
             description: "Win. Earn. Claim Genesis Tokens. Don't let whales take your spot — grind your way into early allocation.",
             gradient: "from-btPurple to-btred",
-            imagePath: "/images/genesis-launch.png" // placeholder for your image
+            svgContent: (
+                <svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-11 transition-all duration-300">
+                    <path d="M14.2505 0.00537109C13.5219 0.00537109 13.003 0.452998 12.6764 0.898604C12.3501 1.34421 12.1462 1.82075 12.1462 2.3764C12.1462 2.93213 12.3361 3.41992 12.6444 3.90859C12.9529 4.39727 13.4449 4.9501 14.2506 4.9501H14.2329L14.8156 4.96258V15.6854C10.2693 21.4747 1.4387 32.7607 1.4387 32.7607L1.40337 32.8058L1.3748 32.8552C0.926563 33.6293 0.494141 34.7055 0.494141 35.9872C0.494141 39.1099 3.08516 41.6849 6.19183 41.685H32.5239C35.6223 41.685 38.2216 39.1435 38.2216 35.9872C38.2216 34.5549 37.5971 33.4713 37.2375 32.8537L37.2082 32.8031L23.9005 15.9907V4.96205C24.1287 4.95625 24.1696 4.95027 24.4573 4.9501H24.4651C25.2709 4.9501 25.763 4.39709 26.0714 3.90859C26.1713 3.75004 26.2533 3.59069 26.3259 3.43003L26.4489 3.30725H26.3774C26.4962 3.01088 26.5695 2.70607 26.5695 2.37631C26.5695 1.82084 26.3659 1.34412 26.0394 0.898604C25.7129 0.452998 25.1939 0.00537109 24.4651 0.00537109H14.2504H14.2505ZM14.2505 1.64787H24.4653C24.4571 1.64787 24.5796 1.68505 24.7146 1.86936C24.8496 2.05357 24.9273 2.35205 24.9273 2.37648C24.9273 2.40074 24.8356 2.78922 24.6825 3.0318C24.5299 3.2735 24.3818 3.30707 24.465 3.30733C23.8642 3.30733 23.3999 3.32465 23.208 3.33238V3.31419H14.6872V3.31683L14.2596 3.3076H14.2506C14.336 3.3076 14.1867 3.27446 14.0335 3.03188C13.8806 2.78931 13.7888 2.40083 13.7888 2.37648C13.7888 2.35223 13.8664 2.05375 14.0015 1.86936C14.1365 1.68522 14.259 1.64805 14.2507 1.64805L14.2505 1.64787ZM16.4579 4.9566H22.2583V11.5546H22.2545V16.1685L22.2584 16.1736V16.5623L35.8433 33.7251C36.1868 34.3173 36.5792 35.0523 36.5792 35.9872C36.5792 38.2425 34.7256 40.0424 32.5241 40.0424H6.19209C3.99896 40.0423 2.13682 38.1952 2.13682 35.9872C2.13682 35.6746 2.17461 35.3752 2.23754 35.0921L2.24237 35.0995C2.30864 34.7942 2.40453 34.5152 2.51343 34.2634L2.49814 34.2846C2.584 34.0807 2.67831 33.8895 2.77675 33.7164C2.83546 33.6414 11.8103 22.1709 16.2827 16.4763L16.4581 16.253V16.1515C16.4601 16.1489 16.4642 16.1438 16.4662 16.1411V11.5546H16.4581V4.9566H16.4579ZM18.1085 11.5546V16.7065L17.9336 16.9295C14.9368 20.7539 4.25964 34.4964 4.18212 34.5961C3.97294 34.9655 3.78837 35.4478 3.78837 35.9863C3.78837 37.3229 4.91952 38.4455 6.24034 38.4455H32.5192C33.8485 38.4455 34.9712 37.3569 34.9712 35.9863C34.9712 35.4345 34.7405 34.9954 34.5139 34.6033L20.6117 16.7324V11.5545H18.1086L18.1085 11.5546ZM17.7527 22.0777C19.5997 22.0777 21.1145 23.5926 21.1145 25.4395C21.1145 27.2867 19.5997 28.8016 17.7527 28.8016C15.9057 28.8016 14.3907 27.2867 14.3907 25.4398C14.3907 23.5927 15.9057 22.0777 17.7527 22.0777ZM17.7527 23.7204C16.7935 23.7204 16.0334 24.4804 16.0334 25.4395C16.0334 26.3988 16.7936 27.159 17.7527 27.159C18.7119 27.159 19.4721 26.399 19.4721 25.4396C19.4721 24.4804 18.7118 23.7202 17.7527 23.7202V23.7204ZM12.4535 28.5383C14.3005 28.5383 15.8155 30.0532 15.8155 31.9003C15.8155 33.7474 14.3005 35.2623 12.4535 35.2623C10.6065 35.2623 9.09151 33.7472 9.09151 31.9002C9.09151 30.0532 10.6065 28.5383 12.4535 28.5383ZM20.9458 29.4796C23.1135 29.4796 24.8884 31.2547 24.8884 33.4224C24.8884 35.5902 23.1134 37.365 20.9458 37.365C18.7781 37.365 17.003 35.5901 17.003 33.4224C17.003 31.2547 18.7781 29.4796 20.9458 29.4796ZM12.4535 30.1809C11.4944 30.1809 10.7342 30.9412 10.7342 31.9003C10.7342 32.8595 11.4944 33.6197 12.4535 33.6197C13.4127 33.6197 14.1729 32.8596 14.1729 31.9003C14.1729 30.9411 13.4127 30.1809 12.4535 30.1809ZM20.9458 31.1223C19.6659 31.1223 18.6457 32.1425 18.6457 33.4224C18.6457 34.7023 19.6659 35.7225 20.9458 35.7225C22.2258 35.7225 23.2459 34.7025 23.2459 33.4224C23.2459 32.1425 22.2257 31.1223 20.9458 31.1223Z" fill="white" className="group-hover:fill-[#D1FD0A] transition-colors duration-300" />
+                </svg>
+            )
         },
         {
             icon: "⚡",
             title: "Instant Rewards for Virtual Agents",
             description: "Deploy your agent and start farming perks in real-time — 24/7, non-stop.",
             gradient: "from-btred to-btPurple",
-            imagePath: "/images/instant-rewards.png" // placeholder for your image
+            svgContent: (
+                <svg width="22" height="43" viewBox="0 0 22 43" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-11 transition-all duration-300">
+                    <path d="M21.5469 17.5449H11V0.40625L0.453125 25.4551H11V42.5938L21.5469 17.5449Z" fill="white" className="group-hover:fill-[#D1FD0A] transition-colors duration-300" />
+                </svg>
+            )
         },
         {
             icon: "🎮",
             title: "Entertainment While You Earn",
             description: "Battle, flex, and rise up the ranks while your points stack in the background.",
             gradient: "from-btPurple to-btGreen",
-            imagePath: "/images/entertainment.png" // placeholder for your image
+            svgContent: (
+                <svg width="42" height="27" viewBox="0 0 42 27" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-7 transition-all duration-300">
+                    <path d="M31.982 1.05992C26.4496 -0.0955757 26.4167 3.87594 21.0072 3.87594C16.327 3.87594 16.1515 -0.0505757 10.0323 1.05992C0.0123487 2.87152 -1.52811 24.917 3.78751 26.0723C6.73871 26.7134 8.22555 23.2911 12.1275 20.8346C12.7067 21.2628 13.3796 21.5467 14.0904 21.6629C14.8013 21.7791 15.5296 21.7241 16.215 21.5026C16.9004 21.2811 17.5231 20.8994 18.0315 20.3892C18.5399 19.879 18.9194 19.255 19.1385 18.5688C19.7593 18.515 20.3822 18.4883 21.0053 18.4888C21.6615 18.4888 22.2744 18.5169 22.8621 18.5677C23.0817 19.254 23.4618 19.878 23.9709 20.388C24.4799 20.898 25.1032 21.2793 25.7891 21.5003C26.4749 21.7213 27.2036 21.7756 27.9146 21.6587C28.6256 21.5417 29.2985 21.257 29.8775 20.828C33.7842 23.2846 35.2711 26.7105 38.2232 26.0686C43.5379 24.9169 41.9581 3.14275 31.982 1.05992ZM11.4612 12.3313H9.16343V9.99488H6.82589V7.69716H9.16326V5.35988H11.4611V7.69619H13.7974V9.99401H11.4611V12.3303L11.4612 12.3313ZM14.8207 20.2076C14.2238 20.2076 13.6404 20.0306 13.1441 19.699C12.6478 19.3673 12.2611 18.896 12.0327 18.3446C11.8043 17.7932 11.7445 17.1864 11.861 16.601C11.9774 16.0156 12.2648 15.4779 12.6869 15.0558C13.1089 14.6338 13.6467 14.3464 14.2321 14.23C14.8175 14.1135 15.4242 14.1733 15.9757 14.4017C16.5271 14.6301 16.9984 15.0169 17.33 15.5132C17.6616 16.0095 17.8386 16.5929 17.8386 17.1898C17.8388 17.9901 17.5211 18.7578 16.9553 19.3239C16.3896 19.89 15.6221 20.2082 14.8217 20.2085L14.8207 20.2076ZM27.1783 20.2076C26.5815 20.2071 25.9983 20.0296 25.5023 19.6976C25.0064 19.3656 24.62 18.8941 24.392 18.3425C24.1641 17.791 24.1048 17.1843 24.2216 16.599C24.3384 16.0138 24.6261 15.4763 25.0484 15.0546C25.4707 14.6328 26.0085 14.3458 26.5939 14.2296C27.1792 14.1135 27.7859 14.1736 28.3372 14.4022C28.8884 14.6309 29.3595 15.0178 29.6909 15.5142C30.0223 16.0105 30.199 16.594 30.1988 17.1908C30.1988 17.5873 30.1207 17.9799 29.9688 18.3462C29.817 18.7126 29.5944 19.0453 29.3139 19.3256C29.0334 19.6059 28.7004 19.8281 28.3339 19.9796C27.9675 20.1311 27.5747 20.2088 27.1782 20.2085L27.1783 20.2076ZM29.26 10.3675C28.9588 10.3676 28.6644 10.2783 28.414 10.1111C28.1636 9.94378 27.9684 9.706 27.8531 9.42778C27.7379 9.14956 27.7077 8.84341 27.7664 8.54804C27.8252 8.25268 27.9702 7.98137 28.1831 7.76842C28.3961 7.55547 28.6674 7.41046 28.9627 7.35172C29.2581 7.29298 29.5643 7.32316 29.8425 7.43843C30.1207 7.5537 30.3585 7.74888 30.5258 7.9993C30.693 8.24972 30.7823 8.54412 30.7822 8.84527C30.7822 9.04521 30.7429 9.2432 30.6663 9.42792C30.5898 9.61264 30.4777 9.78049 30.3363 9.92187C30.1949 10.0632 30.0271 10.1754 29.8424 10.2519C29.6576 10.3284 29.4597 10.3678 29.2597 10.3678L29.26 10.3675ZM32.5575 13.6652C32.2563 13.6652 31.962 13.5759 31.7116 13.4087C31.4612 13.2414 31.266 13.0036 31.1508 12.7254C31.0355 12.4472 31.0053 12.1411 31.0641 11.8457C31.1228 11.5504 31.2678 11.2791 31.4807 11.0661C31.6936 10.8532 31.9649 10.7082 32.2603 10.6494C32.5556 10.5906 32.8617 10.6208 33.1399 10.736C33.4181 10.8512 33.6559 11.0464 33.8233 11.2967C33.9906 11.5471 34.0799 11.8415 34.0799 12.1426C34.08 12.3429 34.0406 12.5413 33.9639 12.7264C33.8872 12.9115 33.7748 13.0796 33.633 13.2211C33.4912 13.3626 33.3229 13.4748 33.1377 13.5511C32.9525 13.6275 32.754 13.6666 32.5537 13.6661L32.5575 13.6652ZM32.5575 7.06918C32.2563 7.0692 31.962 6.97992 31.7116 6.81263C31.4612 6.64534 31.266 6.40756 31.1508 6.12936C31.0355 5.85115 31.0053 5.54502 31.0641 5.24967C31.1228 4.95433 31.2678 4.68303 31.4807 4.47009C31.6937 4.25715 31.965 4.11214 32.2603 4.05338C32.5557 3.99463 32.8618 4.02477 33.14 4.14001C33.4182 4.25524 33.656 4.45039 33.8233 4.70077C33.9906 4.95115 34.0799 5.24552 34.0799 5.54665C34.08 5.74698 34.0406 5.94536 33.9639 6.13042C33.8872 6.31549 33.7747 6.4836 33.633 6.62512C33.4912 6.76664 33.3229 6.87879 33.1377 6.95514C32.9525 7.03149 32.754 7.07054 32.5537 7.07006L32.5575 7.06918ZM35.8549 10.3667C35.5538 10.3667 35.2594 10.2774 35.0091 10.1101C34.7587 9.94277 34.5635 9.70498 34.4483 9.42678C34.3331 9.14857 34.3029 8.84244 34.3617 8.5471C34.4204 8.25176 34.5654 7.98047 34.7783 7.76754C34.9913 7.55461 35.2626 7.4096 35.5579 7.35086C35.8532 7.29211 36.1594 7.32226 36.4376 7.4375C36.7158 7.55273 36.9536 7.74788 37.1209 7.99826C37.2882 8.24864 37.3775 8.543 37.3775 8.84413C37.3776 9.04448 37.3382 9.24288 37.2615 9.42797C37.1848 9.61306 37.0723 9.78118 36.9305 9.92272C36.7887 10.0642 36.6204 10.1764 36.4351 10.2528C36.2499 10.3291 36.0514 10.3681 35.8511 10.3676L35.8549 10.3667Z" fill="white" className="group-hover:fill-[#D1FD0A] transition-colors duration-300" />
+                </svg>
+            )
         },
         {
             icon: "🌐",
             title: "Built for Virtual Economy",
             description: "Powers the entire Virtual Ecosystem with AI-driven interactions and evolving gameplay.",
             gradient: "from-btGreen to-btred",
-            imagePath: "/images/virtual-economy.png" // placeholder for your image
+            svgContent: (
+                <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-10 transition-all duration-300">
+                    <path d="M12.8437 0.90918L8.48428 3.81309L0.898438 32.2686L32.6542 40.0908L41.1005 8.80176L35.2733 7.17578L33.12 15.209L23.8915 12.7393L22.5995 17.5908C23.9354 18.4434 24.5595 20.0693 24.1552 21.5986C23.6366 23.5498 21.6327 24.7012 19.6903 24.1826C17.7479 23.6641 16.5966 21.6602 17.1151 19.7178C17.5282 18.1709 18.8905 17.0723 20.4901 17.0107C20.6747 17.002 20.8681 17.0107 21.0526 17.0371L22.3095 12.3086L12.202 9.60156L12.413 8.81055L14.4169 1.34775L12.8437 0.90918ZM15.911 1.59297L14.206 8.44141L31.9686 13.1963L33.6737 6.35225L15.911 1.59297ZM4.68037 27.1445L32.1093 33.71L31.7226 35.3096L4.29717 28.7441L4.68037 27.1445Z" fill="white" className="group-hover:fill-[#D1FD0A] transition-colors duration-300" />
+                </svg>
+            )
         }
     ];
 
     return (
-        <section id="features" className="py-24 bg-newGrey relative overflow-hidden">
-            {/* Background effects */}
-            <div className="absolute inset-0 bg-gradient-to-b from-newGreyAccent/50 to-newGrey"></div>
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-1 bg-gradient-to-r from-transparent via-btGreen to-transparent"></div>
-
-            {/* Additional background elements */}
-            <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-btGreen/5 to-transparent rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-btPurple/5 to-transparent rounded-full blur-3xl"></div>
+        <section id="features" className="py-24 relative overflow-hidden">
+            <SponsorsSection />
 
             <div className="relative z-10 container mx-auto px-6">
                 <div className="text-center mb-16">
@@ -61,49 +74,25 @@ export default function FeaturesSection() {
                     </p>
                 </div>
 
-                <SponsorsSection />
-
                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="group bg-gradient-to-br from-newGreyAccent to-newGreyBG backdrop-blur-sm border border-btGreen rounded-2xl p-8 hover:border-btGreen transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-2">
-                            {/* Feature Image Placeholder */}
-                            <div className="w-full h-32 bg-gradient-to-br from-newGreyAccent to-newGreyBG rounded-lg mb-6 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-300">
-                                {/* You can replace this with actual images */}
-                                <div className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-lg flex items-center justify-center text-2xl transform group-hover:rotate-12 transition-transform duration-300`}>
-                                    {feature.icon}
+                        <div key={index} className="group bg-[#171717c3] backdrop-blur-sm border border-transparent rounded-2xl p-8 hover:border-[#D1FD0ACC] transition-all duration-300 min-h-12 cursor-pointer aspect-square flex flex-col justify-center items-center">
+                            {/* SVG Icon */}
+                            <div className="mb-6 flex justify-center">
+                                <div className="w-16 h-16 flex items-center justify-center">
+                                    {feature.svgContent}
                                 </div>
                             </div>
 
-                            <div className={`w-12 h-12 bg-gradient-to-br ${feature.gradient} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                                <span className="text-white font-bold text-xl">{feature.icon}</span>
-                            </div>
-
-                            <h3 className="text-xl font-bold text-white mb-4 group-hover:text-btGreen transition-colors duration-300">
+                            <h3 className="text-lg font-bold text-white mb-4 group-hover:text-[#D1FD0ACC] transition-colors duration-300 text-center">
                                 {feature.title}
                             </h3>
 
-                            <p className="text-btGrey text-sm leading-relaxed">
+                            <p className="text-btGrey text-xs leading-relaxed text-center">
                                 {feature.description}
                             </p>
-
-                            {/* Hover effect indicator */}
-                            <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div className="w-full h-1 bg-btGreen rounded-full"></div>
-                            </div>
                         </div>
                     ))}
-                </div>
-
-                {/* Call to Action Section */}
-                <div className="text-center mt-16">
-                    <div className="inline-flex items-center gap-2 bg-btGreen/10 border border-btGreen/20 rounded-full px-6 py-3 text-btGreen text-sm font-medium mb-6">
-                        <span className="w-2 h-2 bg-btGreen rounded-full animate-pulse"></span>
-                        Ready to start your journey?
-                    </div>
-                    {/* 
-                    <button className="group bg-btGreen text-btDark font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-                        <span className="relative z-10">Deploy Your Agent Now</span>
-                    </button> */}
                 </div>
             </div>
         </section>

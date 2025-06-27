@@ -4,7 +4,7 @@
 /* NUCLEAR OPTION - FORCE THESE COLORS TO EXIST */
 @layer utilities {
   .bg-btGreen {
-    background-color: #d1fd0a !important;
+    background-color: #D1FD0ACC !important;
   }
 
   .bg-btred {
@@ -18,6 +18,7 @@
   .bg-btGrey {
     background-color: #8F8F8F !important;
   }
+
 
   .bg-btDark {
     background-color: #080809 !important;
@@ -131,7 +132,8 @@
 }
 
 body {
-  background-color: #0d0d0d;
+  background-image: url('/images/background.jpg');
+  background-color: #080809;
   color: #f1f5f9;
   font-family: var(--font-geist-sans);
 }

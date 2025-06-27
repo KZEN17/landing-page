@@ -60,8 +60,8 @@ const config: Config = {
                 },
             },
             fontFamily: {
-                sans: ["var(--font-geist-sans)", "Arial", "sans-serif"],
-                mono: ["var(--font-geist-mono)", "Courier", "monospace"],
+                sans: ["Formula Condensed", "Arial", "sans-serif"],
+                mono: ["Formula Condensed", "Courier", "monospace"],
             },
         },
     },

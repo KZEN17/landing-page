@@ -33,42 +33,34 @@ export default function FAQSection() {
     ];
 
     return (
-        <section id="faq" className="py-24 bg-gradient-to-br relative overflow-hidden">
-            {/* Background decorative elements */}
-            <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-br from-lime-400/10 to-emerald-500/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-full blur-3xl"></div>
-
-            <div className="relative z-10 container mx-auto px-6">
+        <section id="faq" className="py-12 relative overflow-hidden">
+            <div className="relative z-10 container mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">FAQ</h2>
-                    <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                    <p className="text-lg text-btGrey max-w-2xl mx-auto">
                         Have a different question? Join our community and ask away!
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto space-y-4">
+                <div className="mx-auto space-y-4">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="group bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl overflow-hidden hover:border-lime-400/30 transition-all duration-300"
+                            className="group bg-gradient-to-r from-black-800/30  to-black-900/100  border border-gray-700/50 rounded-2xl overflow-hidden hover:border-lime-400/30 transition-all duration-300"
                         >
                             <button
-                                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-slate-800/30 transition-colors duration-200"
+                                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-btGrey-800/30 transition-colors duration-200"
                                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                             >
-                                <span className="text-lg font-semibold text-white group-hover:text-lime-400 transition-colors duration-200">
+                                <span className="text-lg font-semibold text-white group-hover:text-[#D1FD0A] transition-colors duration-200">
                                     {faq.question}
                                 </span>
                                 <div className={`w-6 h-6 flex items-center justify-center transition-transform duration-200 ${openFAQ === index ? 'rotate-180' : ''
                                     }`}>
-                                    <svg
-                                        className="w-4 h-4 text-lime-400"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.6227 22.7132L11.6286 22.9463L2.83378 25.0055L2.38382 25.1115L2.30269 24.6556L0.728268 15.7947L0.549503 14.7946L1.39918 15.3517L4.26026 17.2271L5.43274 15.451L6.16573 15.9323L4.75062 18.0742L4.5094 18.4393L4.14494 18.1994L1.76831 16.6398L3.08418 24.0474L10.4343 22.3261L8.06289 20.7705L7.69562 20.5285L7.93826 20.1627L12.5837 13.1298L11.2088 12.2281L11.6928 11.4971L13.4315 12.6375L13.7986 12.8794L13.556 13.2452L8.91063 20.2781L11.7698 22.1528L12.6227 22.7132ZM7.73075 15.9126L3.23717 12.9584L7.86031 5.94651L8.10153 5.58127L7.73495 5.34072L4.28649 3.07164L14.5581 0.673423L16.4095 11.044L12.9596 8.77568L12.5951 8.53563L12.3538 8.90081L7.73073 15.9127L7.73075 15.9126Z" fill="#D1FD0A" />
                                     </svg>
+
                                 </div>
                             </button>
 
@@ -85,8 +77,8 @@ export default function FAQSection() {
                 </div>
 
                 <div className="text-center text-black mt-12">
-                    <button className="group bg-btGreen rounded-3xl py-4 px-8">
-                        <span className="relative z-10">Join Community</span>
+                    <button className="group bg-btGreen rounded-xl py-4 px-8">
+                        <span className="relative z-10 text-lg font-bold">JOIN COMMUNITY</span>
                     </button>
                 </div>
             </div>
