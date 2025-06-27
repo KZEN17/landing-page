@@ -25,10 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          // href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="stylesheet" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-condensed`}>
         {/* Fixed Background Container */}
@@ -37,17 +34,16 @@ export default function RootLayout({
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/background.jpg')",
-              backgroundAttachment: 'fixed'
+              backgroundImage: "url('/images/background.jpg')"
             }}
           />
 
           {/* Dark Overlay */}
-          <div className="absolute bg-black/60" />
+          <div className="absolute inset-0 bg-black/60" />
 
-          {/* Sticky Female Fighter - Bottom Right */}
+          {/* Sticky Female Fighter - Bottom Right - Hidden on mobile */}
           <div
-            className="fixed bottom-0  -left-48 w-150 h-screen z-10 pointer-events-none"
+            className="hidden lg:block fixed bottom-0 -left-48 w-150 h-screen z-10 pointer-events-none"
             style={{
               backgroundImage: "url('/images/sticky-background-element.png')",
               backgroundRepeat: 'no-repeat',
