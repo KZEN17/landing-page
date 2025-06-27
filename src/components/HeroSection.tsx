@@ -7,7 +7,7 @@ export default function HeroSection() {
                     {/* Left Content */}
                     <div className="space-y-0">
                         {/* Badge */}
-                        <div className="inline-flex items-center px-4 text-btGreen text-sm font-medium backdrop-blur-sm">
+                        <div className="inline-flex items-center px-4 text-btGreen text-sm font-medium">
                             PvP Staking • Virtual Agents • Genesis Access
                         </div>
 

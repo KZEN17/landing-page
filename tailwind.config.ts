@@ -60,8 +60,10 @@ const config: Config = {
                 },
             },
             fontFamily: {
-                sans: ["Formula Condensed", "Arial", "sans-serif"],
-                mono: ["Formula Condensed", "Courier", "monospace"],
+                sans: ['"Roboto Condensed"', "system-ui", "sans-serif"],
+                mono: ['"Roboto Condensed"', "Courier", "monospace"],
+                condensed: ['"Roboto Condensed"', "Arial", "sans-serif"],
+                formula: ['"Roboto Condensed"', "Arial", "sans-serif"],
             },
         },
     },

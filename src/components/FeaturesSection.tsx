@@ -46,21 +46,11 @@ export default function FeaturesSection() {
                 </svg>
             )
         },
-        // {
-        //     icon: "🌐",
-        //     title: "Built for Virtual Economy",
-        //     description: "Powers the entire Virtual Ecosystem with AI-driven interactions and evolving gameplay.",
-        //     gradient: "from-btGreen to-btred",
-        //     svgContent: (
-        //         <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-10 transition-all duration-300">
-        //             <path d="M12.8437 0.90918L8.48428 3.81309L0.898438 32.2686L32.6542 40.0908L41.1005 8.80176L35.2733 7.17578L33.12 15.209L23.8915 12.7393L22.5995 17.5908C23.9354 18.4434 24.5595 20.0693 24.1552 21.5986C23.6366 23.5498 21.6327 24.7012 19.6903 24.1826C17.7479 23.6641 16.5966 21.6602 17.1151 19.7178C17.5282 18.1709 18.8905 17.0723 20.4901 17.0107C20.6747 17.002 20.8681 17.0107 21.0526 17.0371L22.3095 12.3086L12.202 9.60156L12.413 8.81055L14.4169 1.34775L12.8437 0.90918ZM15.911 1.59297L14.206 8.44141L31.9686 13.1963L33.6737 6.35225L15.911 1.59297ZM4.68037 27.1445L32.1093 33.71L31.7226 35.3096L4.29717 28.7441L4.68037 27.1445Z" fill="white" className="group-hover:fill-[#D1FD0A] transition-colors duration-300" />
-        //         </svg>
-        //     )
-        // }
+
     ];
 
     return (
-        <section id="features" className="py-24 relative overflow-hidden">
+        <section id="features" className="py-16 relative overflow-hidden">
             <SponsorsSection />
 
             <div className="relative z-10 container mx-auto px-6">
@@ -70,13 +60,13 @@ export default function FeaturesSection() {
                         <span className="text-btGreen"> Virtual Economy</span>
                     </h2>
                     <p className="text-xl text-btGrey max-w-3xl mx-auto">
-                        VPVP.FUN powers Agents, Users, and the Virtual Ecosystem with cutting-edge technology and seamless integration.
+                        VPVP.FUN powers Agents, Users, and the Virtual Ecosystem.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {features.map((feature, index) => (
-                        <div key={index} className="group bg-[#171717c3] backdrop-blur-sm border border-transparent rounded-2xl p-8 hover:border-[#D1FD0ACC] transition-all duration-300 max-h-72 cursor-pointer aspect-square flex flex-col justify-center items-center">
+                        <div key={index} className="group bg-[#171717c3] backdrop-blur-sm min-h-12 border border-transparent rounded-2xl p-8 hover:border-[#D1FD0ACC] transition-all duration-300 max-h-64 cursor-pointer aspect-square flex flex-col justify-center items-center">
                             {/* SVG Icon */}
                             <div className="mb-6 flex justify-center">
                                 <div className="w-16 h-16 flex items-center justify-center">

@@ -4,10 +4,12 @@ import FeaturesSection from "../components/FeaturesSection";
 import FAQSection from "../components/FAQSection";
 import { Partners } from "@/components/Partners";
 import Footer from "@/components/Footer";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Sidebar />
       {/* Container for card-based sections with spacing */}
       <div className="space-y-8 max-w-[90%] mx-auto md:px-8 lg:px-12 pb-20">
         <div className="bg-[#171717a4] backdrop-blur-xs rounded-3xl shadow-2xl">

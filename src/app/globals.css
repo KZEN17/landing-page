@@ -1,3 +1,6 @@
+/* Import Formula Condensed Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 @tailwind utilities;
 
@@ -18,7 +21,6 @@
   .bg-btGrey {
     background-color: #8F8F8F !important;
   }
-
 
   .bg-btDark {
     background-color: #080809 !important;
@@ -129,13 +131,14 @@
 :root {
   --font-geist-sans: "Geist", system-ui, sans-serif;
   --font-geist-mono: "Geist Mono", Courier, monospace;
+  --font-formula-condensed: "Roboto Condensed", system-ui, sans-serif;
 }
 
 body {
   background-image: url('/images/background.jpg');
   background-color: #080809;
   color: #f1f5f9;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-formula-condensed);
 }
 
 /* Custom animations */
