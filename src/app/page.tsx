@@ -5,6 +5,7 @@ import FAQSection from "../components/FAQSection";
 import { Partners } from "@/components/Partners";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
+import TokenomicsSection from "@/components/Tokenomics";
 
 export default function Home() {
   return (
@@ -26,6 +27,14 @@ export default function Home() {
           <FeaturesSection />
         </div>
 
+        {/* FAQ Section Card */}
+        <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
+          <TokenomicsSection />
+        </div>
+        {/* FAQ Section Card */}
+        <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
+          <FAQSection />
+        </div>
         {/* FAQ Section Card */}
         <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
           <FAQSection />
