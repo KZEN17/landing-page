@@ -65,15 +65,15 @@ export default function FeaturesSection() {
                 </div>
 
                 {/* Responsive Grid Layout */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group bg-[#171717c3] backdrop-blur-sm border border-transparent rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 hover:border-[#D1FD0ACC] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center min-h-[280px] md:min-h-[320px] lg:min-h-[300px]"
+                            className="group bg-[#171717c3] backdrop-blur-sm border border-transparent rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 hover:border-[#D1FD0ACC] transition-all duration-300 cursor-pointer flex flex-col justify-center items-center min-h-[280px] md:min-h-[320px] lg:min-h-[150px]"
                         >
                             {/* SVG Icon */}
                             <div className="mb-4 md:mb-6 flex justify-center">
-                                <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                                <div className="w-10 h-10 md:w-16 md:h-10 flex items-center justify-center">
                                     {feature.svgContent}
                                 </div>
                             </div>

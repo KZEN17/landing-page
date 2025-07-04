@@ -22,15 +22,16 @@ export default function Home() {
           {/* Hero Section - no card wrapper, full viewport */}
           <HeroSection />
         </div>
-        {/* Create Agent Section Card */}
-        <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
-          <CreateAgentSection />
-        </div>
         {/* Features Section Card */}
 
         <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
           <FeaturesSection />
         </div>
+        {/* Create Agent Section Card */}
+        <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
+          <CreateAgentSection />
+        </div>
+
 
 
         {/* Tokenomics Section Card */}
