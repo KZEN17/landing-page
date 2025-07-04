@@ -6,6 +6,7 @@ import { Partners } from "@/components/Partners";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
 import TokenomicsSection from "@/components/Tokenomics";
+import CreateAgentSection from "@/components/CreateAgentSection";
 
 export default function Home() {
   return (
@@ -27,7 +28,11 @@ export default function Home() {
           <FeaturesSection />
         </div>
 
-        {/* FAQ Section Card */}
+        {/* Create Agent Section Card */}
+        <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
+          <CreateAgentSection />
+        </div>
+        {/* Tokenomics Section Card */}
         <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
           <TokenomicsSection />
         </div>
