@@ -35,10 +35,6 @@ export default function Home() {
         <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
           <FAQSection />
         </div>
-        {/* FAQ Section Card */}
-        <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">
-          <FAQSection />
-        </div>
 
         {/* Partners Section Card */}
         <div className="bg-[#171717a4] backdrop-blur-xs rounded-xl md:rounded-3xl shadow-2xl">

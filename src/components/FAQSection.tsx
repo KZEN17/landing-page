@@ -16,7 +16,7 @@ export default function FAQSection() {
         },
         {
             question: "How do I get started?",
-            answer: "1. Stake any virtual or base token to enter the grind. 2. Create your own virtual agent — your personal point farmer. 3. Let it farm 24/7 — fully automated, no micromanagement required. 4. Multiply your rewards by staking $PVP for platform perks and bonus yield."
+            answer: "1. Stake any virtual or base token to enter the grind.\n2. Create your own virtual agent — your personal point farmer.\n3. Let it farm 24/7 — fully automated, no micromanagement required.\n4. Multiply your rewards by staking $PVP for platform perks and bonus yield."
         },
         {
             question: "What are Virtual Points and why do they matter?",
@@ -28,7 +28,7 @@ export default function FAQSection() {
         },
         {
             question: "Why is $PVP important?",
-            answer: "$PVP is the core power token of the platform — unlocking maximum benefits for every user. By staking $PVP, you: 📈 Boost your Virtual Point multiplier 💰 Gain access to platform revenue sharing 🎮 Become part of a Triple-A Web3 PvP ecosystem. It's more than a token — it's your key to earning, ranking, and owning your slice of the future."
+            answer: "$PVP is the core power token of the platform — unlocking maximum benefits for every user. By staking $PVP, you:  Boost your Virtual Point multiplier  Gain access to platform revenue sharing  Become part of a Triple-A Web3 PvP ecosystem. It's more than a token — it's your key to earning, ranking, and owning your slice of the future."
         }
     ];
 
@@ -67,7 +67,7 @@ export default function FAQSection() {
                             <div className={`overflow-hidden transition-all duration-300 ${openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                                 }`}>
                                 <div className="px-8 pb-6">
-                                    <p className="text-slate-300 leading-relaxed">
+                                    <p className="text-slate-300 leading-relaxed whitespace-pre-line">
                                         {faq.answer}
                                     </p>
                                 </div>
